@@ -277,7 +277,7 @@ resource "ibm_is_vpn_gateway" "vpn_gateway1" {
 # Create VPN Gateway Connection
 ##############################################################################
 
-
+*/
 
 ##############################################################################
 # Create instance of Key Protect for use with the cluster
@@ -334,7 +334,7 @@ resource "ibm_kp_key" "ocp_01_kp_key" {
       ibm_resource_instance.key_protect
     ]
 }
-*/
+
 
 ##############################################################################
 # Create OCP Cluster
@@ -420,7 +420,9 @@ resource "ibm_container_vpc_worker_pool" "infra_pool" {
 
     depends_on = [ibm_container_vpc_cluster.app_ocp_cluster_01]
 }
+*/
 
+/*
 ##############################################################################
 # Create Worker Pool for storage such as Openshift Container Storage (SDS) 
 #
@@ -465,7 +467,9 @@ resource "ibm_container_vpc_worker_pool" "storage_pool" {
 
     depends_on = [ibm_container_vpc_cluster.app_ocp_cluster_01]
 }
+*/
 
+/*
 ##############################################################################
 # Create Worker Pool for cloud pak  
 #
