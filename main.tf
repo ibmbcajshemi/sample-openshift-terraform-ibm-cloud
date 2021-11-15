@@ -333,6 +333,7 @@ resource "ibm_kp_key" "ocp_01_kp_key" {
       ibm_resource_instance.key_protect
     ]
 }
+*/
 
 ##############################################################################
 # Create OCP Cluster
@@ -375,6 +376,7 @@ resource "ibm_container_vpc_cluster" "app_ocp_cluster_01" {
 
 
 }
+/*
 
 ##############################################################################
 # Create Worker Pool for infrastructure  
