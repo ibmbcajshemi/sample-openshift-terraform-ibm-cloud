@@ -422,7 +422,7 @@ resource "ibm_container_vpc_worker_pool" "infra_pool" {
 }
 */
 
-/*
+
 ##############################################################################
 # Create Worker Pool for storage such as Openshift Container Storage (SDS) 
 #
@@ -467,7 +467,7 @@ resource "ibm_container_vpc_worker_pool" "storage_pool" {
 
     depends_on = [ibm_container_vpc_cluster.app_ocp_cluster_01]
 }
-*/
+
 
 /*
 ##############################################################################
